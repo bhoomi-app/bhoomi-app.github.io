@@ -52387,7 +52387,7 @@ $S:0}
 A.aG3.prototype={
 $0(){var s=this.a.c
 s===$&&A.a()
-A.aTP(s+"\n\nRead on Bhoomi \u2014 JSSF Magazine\nhttps://bhoomi.jssfsindh.org",s)},
+A.aTP(s+"\n\nRead on Bhoomi \u2014 JSSF Magazine\nhttps://bhoomi-app.github.io",s)},
 $S:0}
 A.aFJ.prototype={
 $0(){var s=this.a.c

@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://bhoomi.jssfsindh.org/sitemap.xml
+Sitemap: https://bhoomi-app.github.io/sitemap.xml
