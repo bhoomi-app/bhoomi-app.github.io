@@ -28,20 +28,24 @@
   <meta name="author" content="Jeay Sindh Students' Federation">
   <meta name="robots" content="index, follow">
   <meta name="language" content="English, Sindhi">
+  <link rel="canonical" href="https://bhoomi-app.github.io/">
 
   <!-- Open Graph / Facebook -->
   <meta property="og:type" content="website">
+  <meta property="og:url" content="https://bhoomi-app.github.io/">
   <meta property="og:title" content="Bhoomi - The Magazine of Jeay Sindh Students' Federation">
   <meta property="og:description" content="Read editorials, interviews, and articles on Sindhi culture, politics, and student affairs. The official digital magazine of JSSF.">
-  <meta property="og:image" content="icons/Icon-512.png">
+  <meta property="og:image" content="https://bhoomi-app.github.io/icons/Icon-512.png">
+  <meta property="og:image:alt" content="Bhoomi — the magazine of Jeay Sindh Students' Federation">
   <meta property="og:site_name" content="Bhoomi Magazine">
   <meta property="og:locale" content="en_US">
+  <meta property="og:locale:alternate" content="sd_PK">
 
   <!-- Twitter -->
   <meta name="twitter:card" content="summary_large_image">
   <meta name="twitter:title" content="Bhoomi - The Magazine of Jeay Sindh Students' Federation">
   <meta name="twitter:description" content="Read editorials, interviews, and articles on Sindhi culture, politics, and student affairs. The official digital magazine of JSSF.">
-  <meta name="twitter:image" content="icons/Icon-512.png">
+  <meta name="twitter:image" content="https://bhoomi-app.github.io/icons/Icon-512.png">
 
   <!-- Theme Color -->
   <meta name="theme-color" content="#CA0000">
@@ -58,6 +62,44 @@
   <link rel="icon" type="image/png" sizes="192x192" href="icons/Icon-192.png">
 
   <link rel="manifest" href="manifest.json">
+
+  <!-- Structured data for search engines and LLMs -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://bhoomi-app.github.io/#organization",
+        "name": "Jeay Sindh Students' Federation",
+        "alternateName": "JSSF",
+        "url": "https://bhoomi-app.github.io/",
+        "logo": "https://bhoomi-app.github.io/icons/Icon-512.png"
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://bhoomi-app.github.io/#website",
+        "url": "https://bhoomi-app.github.io/",
+        "name": "Bhoomi",
+        "alternateName": "ڀُومي",
+        "description": "The digital magazine of Jeay Sindh Students' Federation (JSSF) — editorials, interviews, and articles on Sindhi culture, politics, and student affairs.",
+        "inLanguage": ["en", "sd"],
+        "publisher": { "@id": "https://bhoomi-app.github.io/#organization" }
+      },
+      {
+        "@type": "Periodical",
+        "@id": "https://bhoomi-app.github.io/#periodical",
+        "name": "Bhoomi",
+        "alternateName": "ڀُومي",
+        "description": "Bhoomi is the official digital magazine of the Jeay Sindh Students' Federation, publishing editorials, interviews, and articles across periodic editions in Sindhi and English.",
+        "inLanguage": ["en", "sd"],
+        "genre": ["Editorials", "Interviews", "Articles"],
+        "about": ["Sindhi culture", "Sindh politics", "Student affairs", "Jeay Sindh movement"],
+        "publisher": { "@id": "https://bhoomi-app.github.io/#organization" }
+      }
+    ]
+  }
+  </script>
 
   <style id="splash-screen-style">
     html {
@@ -126,6 +168,35 @@
   </script>
 </head>
 <body>
+  <!-- Crawlable content for search engines and LLMs (the Flutter app renders to
+       a <canvas>, which crawlers cannot read; this describes the site in HTML). -->
+  <noscript>
+    <main style="max-width:720px;margin:40px auto;padding:0 20px;font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;line-height:1.65;color:#1a1a1a;">
+      <h1>Bhoomi (ڀُومي) — The Magazine of Jeay Sindh Students' Federation</h1>
+      <p><strong>Bhoomi</strong> is the official digital magazine of the
+        <strong>Jeay Sindh Students' Federation (JSSF)</strong>. It publishes writing on
+        Sindhi culture, politics, literature, and student affairs, in Sindhi and English.</p>
+
+      <h2>What you'll find</h2>
+      <ul>
+        <li><strong>Editorials</strong> — the magazine's positions and commentary.</li>
+        <li><strong>Interviews</strong> — conversations with writers, activists, and students.</li>
+        <li><strong>Articles</strong> — reporting and essays from contributors.</li>
+      </ul>
+
+      <h2>Editions</h2>
+      <p>Bhoomi is published in periodic <strong>editions</strong>. Each edition collects a
+        set of pieces; the home page highlights a featured article and the rest of that
+        edition, while the index lets you browse all pieces by section.</p>
+
+      <h2>About JSSF</h2>
+      <p>The Jeay Sindh Students' Federation is a Sindhi student organisation. Bhoomi is its
+        platform for student and cultural writing.</p>
+
+      <p><em>This is an interactive web application and requires JavaScript to run fully.</em></p>
+    </main>
+  </noscript>
+
   <picture id="splash">
       <source srcset="splash/img/light-1x.png 1x, splash/img/light-2x.png 2x, splash/img/light-3x.png 3x, splash/img/light-4x.png 4x" media="(prefers-color-scheme: light)">
       <source srcset="splash/img/dark-1x.png 1x, splash/img/dark-2x.png 2x, splash/img/dark-3x.png 3x, splash/img/dark-4x.png 4x" media="(prefers-color-scheme: dark)">
